@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <div class="container border">
+      <div class="row justify-content-between">
+        <div style="width: 40%; border: 5px red solid" class="col-6">
+          <figure>
+            <img
+              src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-dark.jpg"
+              alt=""
+            />
+            <figcaption>
+              <p class="text-muted">
+                Without .img-fluid, the image leaks out through the parent
+                container
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+        <div style="width: 40%; border: 5px red solid" class="col-6">
+          <figure>
+            <img
+              src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-dark.jpg"
+              alt=""
+              class="img-fluid"
+            />
+            <figcaption>
+              <p class="text-muted">
+                .img-fluid helps a image to stay inside its parent container by
+                automatically resizing the image down to its parent size.
+                <br />
+                This actually applies
+                <code>max-width: 100%; height: auto;</code> to the image.
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="row rounded-image border bg-dark">
+        <h3 style="color: white">Rounded images</h3>
+        <figure>
+          <img
+            src="https://picsum.photos/200/200"
+            class="img-thumbnail"
+            alt=""
+          />
+          <figcaption>
+            <p style="color: white">
+              img-thumbnail gives 1px rounded border with 0.25rem padding
+            </p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://picsum.photos/200/200" class="rounded" alt="" />
+          <figcaption>
+            <p style="color: white">
+              rounded does not add padding or border but still rounds the image
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="container border" style="background-color: orange">
+      <h3>float-start / float-end</h3>
+      <img
+        src="https://picsum.photos/200/200"
+        class="rounded float-start me-3"
+        alt=""
+      />
+      <img
+        src="https://picsum.photos/200/200"
+        class="rounded float-end ms-3"
+        alt=""
+      />
+      <p class="pb-4">
+        We see that the text goes between the floated images... Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Veniam culpa possimus
+        dolorem iure. Reiciendis nihil, voluptates excepturi sint aperiam amet
+        obcaecati et autem hic tempora nesciunt deleniti? Praesentium dolor
+        veniam exercitationem pariatur! Magni, quidem quas ipsa repellat nulla
+        officiis repudiandae totam quo adipisci consequuntur cum doloremque
+        iusto ipsam corrupti explicabo sequi! Aspernatur magni quia fugiat omnis
+        numquam vel veritatis quis aliquam illum ad quidem placeat sunt dolorem
+        est porro at quo sint totam ab, repellat, nostrum fuga! Dicta magni
+        voluptatibus eveniet laborum ratione? Distinctio repudiandae recusandae
+        enim quo! Fuga, saepe impedit id eligendi expedita inventore sequi sint
+        soluta aperiam voluptas.
+      </p>
+    </div>
+    <div class="container border" style="background-color: skyblue">
+      <img src="https://picsum.photos/200/200" class="rounded d-block" alt="" />
+      <p>But not here...</p>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
