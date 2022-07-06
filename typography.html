@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <!-- <link rel="stylesheet" href="typography-responsive.scss" /> -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-around headings">
+        <div class="col-md-4">
+          <h1>h1. Bootstrap heading :)</h1>
+          <p class="h1">h1. Bootstrap heading :(</p>
+          <h2>h1. Bootstrap heading :)</h2>
+          <p class="h2">h1. Bootstrap heading :(</p>
+          <h3>h1. Bootstrap heading :)</h3>
+          <p class="h3">h1. Bootstrap heading :(</p>
+          <h4>h1. Bootstrap heading :)</h4>
+          <p class="h4">h1. Bootstrap heading :(</p>
+          <h5>h1. Bootstrap heading :)</h5>
+          <p class="h5">h1. Bootstrap heading :(</p>
+          <h6>h1. Bootstrap heading :)</h6>
+          <p class="h6">h1. Bootstrap heading :(</p>
+        </div>
+        <div class="col-md-4">
+          <h1 class="display-1">Display 1</h1>
+          <h1 class="display-2">Display 2</h1>
+          <h1 class="display-3">Display 3</h1>
+          <h1 class="display-4">Display 4</h1>
+          <h1 class="display-5">Display 5</h1>
+          <h1 class="display-6">Display 6</h1>
+        </div>
+      </div>
+      <div class="row lead">
+        <p class="lead">This text is using the lead class in paragraph tags.</p>
+        <h1 class="lead">This text is using the lead class in heading tags.</h1>
+        <h1>
+          This text is not using the lead class but still in heading tags.
+        </h1>
+        <p>
+          We see that <code>lead</code> fixes the font size and font weight to
+          1.25rem and 300 respectively, regardless of the html tags used to
+          contain the <code>lead</code> class
+        </p>
+      </div>
+      <div class="row inline-style">
+        <div class="col-md-3">
+          <p>Normal text</p>
+          <p><b>Bolded text</b> either <b>b</b> or <strong>strong</strong></p>
+          <p><i>Italicised text</i> either <i>i</i> or <em>em</em></p>
+          <p><u>Underlined text</u> either <u>u</u> or <ins>ins</ins></p>
+          <p>
+            <s>Strike through text</s> either <s>s</s> or
+            <strike>strike</strike>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h3><code>abbr</code> tag</h3>
+          <p><abbr title="attribute">attr</abbr></p>
+          <p>
+            <abbr title="HyperTextMarkupLanguage" class="initialism">HTML</abbr>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h3><code>blockquotes</code> tag</h3>
+          <blockquote class="blockquote">
+            <p class="mb-0">
+              Blockquotes is used for quoting blocks of content from another
+              source within your document. The <code>blockquote</code> tag is a
+              semantic tag while the <code>.blockquote</code> class is a
+              stylistic class that actually applies the styles to the
+              blockquote.
+            </p>
+            <footer class="blockquote-footer mt-1">
+              This portion is added to identify the source of the blockquote. We
+              use <code>.blockquote-footer</code> bootstrap class to apply style
+              to the blockquote source
+            </footer>
+          </blockquote>
+        </div>
+        <div class="col-md-3">
+          <div class="row text-center">
+            <blockquote class="blockquote">
+              <p class="mb-0">Text-centered blockquote :)</p>
+              <footer class="blockquote-footer mt-1">David Stemsons</footer>
+            </blockquote>
+          </div>
+          <div class="row text-end">
+            <blockquote class="blockquote">
+              <p>Text-ended blockquote :)</p>
+              <footer class="blockquote-footer">David Stehpsons</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <ul class="list-unstyled">
+            <li>line number 1</li>
+            <li>line number 2</li>
+            <li class="text-truncate">
+              line number 3: truncated because long this content is too damn
+              long that the text needs to be truncated
+            </li>
+            <li>line number 4</li>
+            <li>line number 5</li>
+            <ul>
+              <li>Subline number 1</li>
+              <li>Subline number 2</li>
+              <li>Subline number 3</li>
+            </ul>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul class="list-inline">
+            <li>Item 1</li>
+            <li class="list-inline-item">Item 2</li>
+            <li class="list-inline-item">Item 3</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
