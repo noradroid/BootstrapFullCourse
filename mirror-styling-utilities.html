@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Made using custom styles</h2>
+      <div
+        style="padding: 3rem; width: 50%; margin: auto; border: 1px solid black"
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsam
+          itaque quisquam eveniet ex necessitatibus eligendi vero. Laborum optio
+          asperiores quisquam, consectetur veritatis animi rem? Odio, ad.
+          Veritatis iure hic, cupiditate sit nobis sapiente, illo facere
+          consequatur nesciunt beatae sequi.
+        </p>
+        <p style="margin: 3rem">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sunt
+          deserunt molestias pariatur dignissimos exercitationem quia
+          repudiandae ut in! Iure excepturi ut nemo impedit quis rem neque
+          consequatur ullam perferendis minus, harum repudiandae reiciendis
+          assumenda deleniti ad fugiat. Ut, maxime!
+        </p>
+
+        <div
+          style="
+            width: 50%;
+            background-color: #212529;
+            color: white;
+            margin: 0 auto;
+            text-align: center;
+          "
+        >
+          Centered Element
+        </div>
+      </div>
+      <h2>Recreated using only boostrap</h2>
+      <div class="p-3 w-50 mx-auto border border-1 border-dark">
+        <!-- p-3 is wrong, should be p-5 instead to express 3rem! -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsam
+          itaque quisquam eveniet ex necessitatibus eligendi vero. Laborum optio
+          asperiores quisquam, consectetur veritatis animi rem? Odio, ad.
+          Veritatis iure hic, cupiditate sit nobis sapiente, illo facere
+          consequatur nesciunt beatae sequi.
+        </p>
+        <p class="m-5">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sunt
+          deserunt molestias pariatur dignissimos exercitationem quia
+          repudiandae ut in! Iure excepturi ut nemo impedit quis rem neque
+          consequatur ullam perferendis minus, harum repudiandae reiciendis
+          assumenda deleniti ad fugiat. Ut, maxime!
+        </p>
+
+        <div
+          class="d-none d-md-block w-50 bg-dark text-white mx-auto text-center"
+        >
+          Centered Element
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Additionally looking at overflow</h2>
+      <div class="row">
+        <div class="overflow-auto" style="width: 120px; height: 120px">
+          Overflow-auto Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Repellendus natus, voluptatem quas, sapiente facere quidem itaque
+          deserunt soluta delectus quasi commodi voluptatum ipsum qui, doloribus
+          quo accusamus totam ut pariatur?
+        </div>
+        <div class="overflow-hidden" style="width: 120px; height: 120px">
+          Overflow-hidden Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Repellendus natus, voluptatem quas, sapiente facere quidem
+          itaque deserunt soluta delectus quasi commodi voluptatum ipsum qui,
+          doloribus quo accusamus totam ut pariatur?
+        </div>
+        <div class="overflow-visible" style="width: 120px; height: 120px">
+          Overflow-visible Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Repellendus natus,
+        </div>
+        <div class="overflow-scroll" style="width: 120px; height: 120px">
+          Overflow-scroll Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Repellendus natus, voluptatem quas, sapiente facere quidem
+          itaque deserunt soluta delectus quasi commodi voluptatum ipsum qui,
+          doloribus quo accusamus totam ut pariatur?
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 pt-5">
+      <h2>Additionally looking at shadow</h2>
+      <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+      <div class="shadow-sm p-3 mb-5 bg-body rounded">Small shadow</div>
+      <div class="shadow p-3 mb-5 bg-body rounded">Regular shadow</div>
+      <div class="shadow-lg p-3 mb-5 bg-body rounded">Larger shadow</div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
