@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <div class="container cards">
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="https://picsum.photos/300/200"
+          alt="Card image"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has a custom width of 18rem.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This card has no custom styles, and as you can see, it takes up the
+            entire width of its container, which is problematic...
+          </p>
+          <button class="btn btn-primary">Button</button>
+        </div>
+      </div>
+
+      <div class="row my-2">
+        <div class="col-sm-4">
+          <div class="card">
+            <img
+              src="https://picsum.photos/300/200"
+              class="img-fluid card-img-top"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                We can wrap the card in specified columns e.g. col-sm-4
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                to force the card to span up to 4 columns only, just like this
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis quae ullam optio, id doloremque perspiciatis officiis
+                animi non architecto similique.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="card">
+            <div class="card-header">Featured header content</div>
+            <div class="card-body">
+              This is the card body, notice that it doesn't really have any
+              formatting
+            </div>
+            <div class="card-footer text-muted">
+              Do you see this footer? You can add styles to it too like wrapping
+              its contents with heading styles
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-5">
+                <img
+                  src="https://picsum.photos/200/300"
+                  alt="Card image"
+                  class="img-fluid rounded-start"
+                />
+              </div>
+              <div class="col">
+                <div class="card-body">
+                  <h5>Card title</h5>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Fugiat fuga totam non ducimus ipsa?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
